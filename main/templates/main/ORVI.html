@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+Лекарства при простуде, гриппе и ОРВИ
+{% endblock %}
+
+{% block content %}
+    <h1>Лекарства при простуде, гриппе и ОРВИ</h1>
+    <div class="row">
+        {% for i in remedies %}
+        <div class="product-container">
+            <img class="product-image" src="{% static 'img/' %}{{i.img}}" alt="Товар">
+            <div class="product-name"><a href="{% url 'orvi_slug' i.slug %}">{{ i.title }}</a></div>
+            <div class="product-price">{{ i.price }} рублей</div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

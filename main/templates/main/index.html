@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+    <h1>Лекарства</h1>
+    {% if tasks %}
+        {% for element in tasks %}
+            <div class="alert alert-warning mt-2">
+                <h3><a href="{% url 'get_link' element.URL %}">{{element.title}}</a></h3>
+                <p>{{element.Desc}}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>У нас нет записей</p>
+    {% endif %}
+
+{% endblock %}
+
+
+
+

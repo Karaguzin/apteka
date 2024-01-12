@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="ml-5">{{ title }}</h1>
+    <div class="remedy-container">
+        <img class="remedy-image" src="{% static 'img/' %}{{img}}" alt="Товар">
+        <div class="remedy-details">
+            <div class="remedy-price">{{ price }} рублей</div>
+            <div class="remedy-description">{{ description }}</div>
+            <button class="buy">Купить</button>
+        </div>
+    </div>
+{% endblock %}

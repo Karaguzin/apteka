@@ -1,0 +1,94 @@
+.footer-07 {
+    background: #121212;
+}
+
+footer {
+    padding: 7em 0;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+    }
+
+a{
+    text-decoration: none;
+}
+
+.product-container {
+border: 1px solid #ccc;
+padding: 10px;
+width: 250px;
+text-align: center;
+}
+
+.product-image {
+max-width: 100%;
+height: auto;
+}
+
+.product-name {
+font-weight: bold;
+margin-top: 5px;
+}
+
+.product-price {
+    color: #e74c3c;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.remedy-container {
+    padding: 10px;
+    width: 900px;
+    display: flex;
+    align-items: start;
+}
+
+.remedy-image {
+    max-width: 300px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.remedy-details {
+    flex: 1;
+}
+
+.remedy-price {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 24px;
+}
+
+.remedy-description {
+    margin-top: 10px;
+}
+
+.buy
+{
+    width:310px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #2e2a9d;
+    color: #F8F8F8;
+    font-size: 20px;
+    transition: .5s all ease;
+}
+
+.buy:hover
+{
+    color: #191919;
+    background-color: #ffffff;
+    border: 2px solid #2e2a9d;
+    text-decoration: underline;
+}
+
